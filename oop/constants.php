@@ -16,7 +16,7 @@ print Math::pi; //3.14
 
 print PHP_EOL;
 
-class Php56
+/*class Php56
 {
     const SUM = 2 * 2 * 2; // allowed in php 5.6 +
-}
+}*/
