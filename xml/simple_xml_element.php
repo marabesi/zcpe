@@ -31,4 +31,7 @@ $xmlstr = <<<XML
 </movies>
 XML;
 
+class MyHandler extends SimpleXMLElement
+{}
 
+$loadedString = simplexml_load_string($xmlstr, 'MyHandler');
