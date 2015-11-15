@@ -16,3 +16,8 @@
  * b  - binary mode
  */
 
+$file = fopen('/home/matheus/Documents/file.txt', 'r');
+
+fwrite($file, 'File content');
+
+fclose($file);
