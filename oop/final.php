@@ -1,18 +1,18 @@
 <?php
 
-final class NoExtends {}
+class Televisao {
+    private $canal = 99;
 
-// will rise an fatal error (final class)
-//class TryToExtends extends NoExtends {}
-
-class Car
-{
-    final public function numbersOfWheels()
+    final public function mudarCanal($canal)
     {
-        return 4;
+        $this->canal = $canal;
     }
 }
 
-class Toyota extends Car {}
+class NovaTelevisao extends Televisao {
 
-print (new Toyota())->numbersOfWheels(); //4
+    public function mudarCanal($canal) {
+        
+    }
+
+}
