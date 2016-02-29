@@ -1,5 +1,13 @@
 <?php
 
-$file = fopen('file.txt', 'a');
+error_reporting(E_ALL);
 
-fwrite($file, 'New Item');
+
+
+$arquivo = fopen('file.txt', 'a');
+
+//fwrite($arquivo, 'Meu novo item');
+
+fgets($arquivo);
+
+fclose($arquivo);

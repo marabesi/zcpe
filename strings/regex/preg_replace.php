@@ -1,9 +1,6 @@
 <?php
 
-$texto = '!Vamos aplicar uma expressão aqui!';
 
-$total = 0;
+$texto = 'Vamos aplicar uma expressão aqui!';
 
-preg_replace('/!/', '', $texto, -1, $total);
-
-print $total;
+print preg_replace(['/aqui/', '/!/'], '?', $texto);
