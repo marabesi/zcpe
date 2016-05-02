@@ -1,0 +1,22 @@
+{
+  "name": "zcpe",
+  "homepage": "https://github.com/marabesi/zcpe",
+  "authors": [
+    "marabesi <matheus.marabesi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.5",
+    "angular": "^1.5.5"
+  }
+}

@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Lemon);
+
+h1 {
+  font-family: 'Lemon', cursive;
+  font-size: 2 rems;
+}
+
+/*STRUCTURAL ELEMENTS*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 2em;
+}
+
+.skinny {
+  width: 20%;
+}
+
+.fat {
+  width: 75%;
+}
+
+/*BOXES AND POSITIONS*/
+#LEFTY,
+.lefty {
+  float: left;
+}
+
+#RIGHTY,
+.righty {
+  float: right;
+}
+
+#CLEARLY,
+footer,
+.clearly {
+  clear: both;
+}
+
+#BLOCKUP,
+.menu a,
+.blockup {
+  display: block;
+  padding: .5em;
+}
+
+#LINEUP,
+pre,
+.lineup {
+  display: inline;
+}
+
+#NOBOX,
+body,
+.nobox {
+  padding: 0;
+  margin: 0;
+}
+
+#PADDY,
+footer,
+.paddy {
+  padding: 1em;
+}
+
+#MARGE,
+.marge {
+  margin: 1em;
+}
+
+#MARGE-BOT,
+header,
+.marge-bot {
+  margin-bottom: 1em;
+}
+
+#ROUND,
+.logo,
+.round {
+  border-radius: 50%;
+}
+
+#IMAGESTRETCH,
+header img,
+.header-image img,
+.imagestretch {
+  width: 100%;
+}
+
+/*TYPOGRAPHIC STYLES*/
+#NORMALTEXT,
+.container,
+.normaltext {
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  color: #444;
+}
+
+#EMBOLDENED,
+a,
+.emboldened {
+  font-weight: bold;
+}
+
+#STRIPPEDLIST,
+.menu ul,
+.strippedlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#STRIPPEDLINKS,
+.menu a,
+.strippedlinks {
+  text-decoration: none;
+}
+
+/*COLOURS AND PATTERNS*/
+#WHITEBACK,
+.container,
+.whiteback {
+  background-color: #fff;
+}
+
+#LIGHT,
+.light {
+  color: #efefea;
+}
+
+#LIGHTBACK,
+body,
+footer,
+.menu a,
+pre,
+.lightback {
+  background-color: #efefea;
+}
+
+#MID,
+.mid {
+  color: #dbdbdb;
+}
+
+#MIDBACK,
+.menu a:hover,
+.midback {
+  background-color: #dbdbdb;
+}
+
+#DARK,
+a,
+.dark {
+  color: #444;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait),
+screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #PADDY,
+  header,
+  .content,
+  .paddy {
+    padding: 1em;
+  }
+
+  #BLOCKUP,
+  .skinny,
+  .fat,
+  .blockup {
+    display: block;
+  }
+  .lefty, .righty {
+    float: none;
+    clear: both;
+  }
+  #FULLSTRETCH,
+  .skinny,
+  .fat,
+  .column img,
+  .fullstretch {
+    width: 100%;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

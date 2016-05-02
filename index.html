@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="zcpe">
+<head>
+    <link href="style.css" rel="stylesheet"/>
+
+    <title>ZCPE - Zend Certified Engineer</title>
+</head>
+<body>
+<div class="container">
+    <div class="skinny column lefty">
+        <div class="menu" ng-controller="MenuController">
+            <nav>
+                <ul>
+                    <li class="previous">
+                        <a href="#" ng-click="navigate(previous)">{{previous}}</a>
+                    </li>
+                    <li ng-repeat="path in folders">
+                        <a
+                            ng-if="path.path.indexOf('.php') == -1 && path.path.indexOf('.txt') == -1"
+                            href="#" ng-click="navigate(path.path)">{{path.path}}</a>
+
+                        <a
+                            ng-if="path.name.indexOf('.php') > -1 && path.name.indexOf('.txt') > -1"
+                            ng-href="#/repo/detail/path.path">{{path.path}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="fat column righty">
+        <div class="content">
+            <div class="header-image"></div>
+
+            <ng-view></ng-view>
+        </div>
+    </div>
+
+    <footer class="fat righty">ZCPE - Zend Certified Engineer</footer>
+
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/MenuController.js"></script>
+<script src="js/controllers/RepoController.js"></script>
+
+</body>
+</html>
