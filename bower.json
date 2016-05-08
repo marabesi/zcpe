@@ -18,5 +18,9 @@
   "dependencies": {
     "angular-route": "^1.5.5",
     "angular": "^1.5.5"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1",
+    "karma": "^0.4.6"
   }
 }

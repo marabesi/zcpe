@@ -15,13 +15,9 @@
                         <a href="#" ng-click="navigate(previous)">{{previous}}</a>
                     </li>
                     <li ng-repeat="path in folders">
-                        <a
-                            ng-if="path.path.indexOf('.php') == -1 && path.path.indexOf('.txt') == -1"
-                            href="#" ng-click="navigate(path.path)">{{path.path}}</a>
-
-                        <a
-                            ng-if="path.name.indexOf('.php') > -1 && path.name.indexOf('.txt') > -1"
-                            ng-href="#/repo/detail/path.path">{{path.path}}</a>
+                        <a href="#" ng-if="path.path.indexOf('.') == -1" ng-click="navigate(path.path)">{{path.path}}</a>
+                        
+                        <a href="#/repo/detail/{{path.path}}" ng-if="path.path.indexOf('.') > -1">{{path.path}}</a>
                     </li>
                 </ul>
             </nav>
