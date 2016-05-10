@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/test.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/my.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/nosigmodified.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/wrongsig.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/nosig.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/modified.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/test.phar.gz/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/test.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/my.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/nosigmodified.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/wrongsig.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/nosig.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/modified.phar/" />
+          <root url="phar://$MODULE_DIR$/streams/phar-util/test/PharUtil/data/phar/test.phar.gz/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
