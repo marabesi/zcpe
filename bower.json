@@ -17,7 +17,8 @@
   ],
   "dependencies": {
     "angular-route": "^1.5.5",
-    "angular": "^1.5.5"
+    "angular": "^1.5.5",
+    "angular-highlightjs": "^0.6.1"
   },
   "devDependencies": {
     "jasmine-core": "jasmine#^2.4.1",

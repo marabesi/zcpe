@@ -1,4 +1,4 @@
-var app = angular.module('zcpe', ['ngRoute']);
+var app = angular.module('zcpe', ['ngRoute', 'hljs']);
 
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/', {
@@ -9,3 +9,9 @@ app.config(['$routeProvider', function($routeProvider) {
         controller: 'RepoController'
     });
 }]);
+
+//app.config(function(hljsServiceProvider) {
+//    hljsServiceProvider.setOptions({
+//        tabReplace: '    '
+//    });
+//});
