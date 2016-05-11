@@ -1,6 +1,6 @@
 <div ng-init="contents()">
     <h1>Detail</h1>
-    
-    <div hljs hljs-source="content"></div>
+    <h1 ng-if="loading">Loading</h1>
+    <div ng-if="!loading" hljs hljs-source="content"></div>
 </div>
 
