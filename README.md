@@ -1,4 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3cf647f5183c4018b7ddf98d85e156b3)](https://www.codacy.com/app/matheus-marabesi/zcpe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marabesi/zcpe&amp;utm_campaign=Badge_Grade)
+
 # Z.C.E
+
 [Would you like to become a Zend Certified Engineer ?](http://www.zend.com/en/services/certification)
 
 Here you can find simple content of the topics you will find in the exam
